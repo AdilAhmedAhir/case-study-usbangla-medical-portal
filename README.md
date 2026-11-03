@@ -81,4 +81,4 @@ fee_item(id, batch_id, amount) -> payment(id, student_id, fee_item_id)
 
 ---
 
-Designed and delivered by [Adil Ahmed](https://adilahmed.info) at [Start Daily xyz Limited](https://startdaily.xyz), Dhaka.
+Designed and delivered by [Adil Ahmed](https://github.com/AdilAhmedAhir) at [Start Daily xyz Limited](https://startdaily.xyz), Dhaka.
