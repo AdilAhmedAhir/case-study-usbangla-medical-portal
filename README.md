@@ -2,14 +2,6 @@
 
 > **Architecture case study.** Source code is private and owned by the client. This repository contains original documentation only: no client code, data, credentials or assets.
 
-## Problem
-
-A medical college runs admissions, academics, attendance, examinations, library and fees across several groups of people: administrators, faculty, students, guardians and the accounts office. Spreadsheets and disconnected tools made records hard to keep consistent, and each group needed a different view of the same data.
-
-## Solution
-
-A single ERP with six role-specific portals on one shared data model. Each portal shows only what its role needs, while every portal reads from and writes to the same source of truth. Historical records from spreadsheets are brought in through a validated import pipeline.
-
 ## Architecture
 
 ```mermaid
@@ -23,6 +15,14 @@ flowchart LR
   SH --> OBJ[(S3-compatible object storage<br/>documents and media)]
   IMP[Spreadsheet import pipeline] --> DB
 ```
+
+## Problem
+
+A medical college runs admissions, academics, attendance, examinations, library and fees across several groups of people: administrators, faculty, students, guardians and the accounts office. Spreadsheets and disconnected tools made records hard to keep consistent, and each group needed a different view of the same data.
+
+## Solution
+
+A single ERP with six role-specific portals on one shared data model. Each portal shows only what its role needs, while every portal reads from and writes to the same source of truth. Historical records from spreadsheets are brought in through a validated import pipeline.
 
 ## Key flow
 
